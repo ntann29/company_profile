@@ -2,6 +2,9 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Karyawan;
+use App\Models\Informasi;
+use App\Models\Eskul;
 use Illuminate\Http\Request;
 
 class FrontController extends Controller
@@ -11,23 +14,31 @@ class FrontController extends Controller
         return view('welcome');
     }
 
-    public function about()
+    public function informasi()
     {
-        return view('about');
+        $informasi = Informasi::all();
+        return view('informasi', compact('informasi'));
     }
 
-    public function resume()
+    public function eskul()
     {
-        return view('resume');
+        $eskul = Eskul::all();
+        return view('eskul', compact('eskul'));
     }
 
-    public function services()
+    public function karyawan()
     {
-        return view('services');
+        $karyawan = Karyawan::all();
+        return view('karyawan', compact('karyawan'));
     }
 
-    public function portofolio()
+    public function fasilitas()
     {
-        return view('portofolio');
+        return view('fasilitas');
+    }
+
+    public function prestasi()
+    {
+        return view('prestasi');
     }
 }

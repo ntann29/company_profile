@@ -6,12 +6,6 @@
                       <i class="ti ti-menu-2"></i>
                   </a>
               </li>
-              <li class="nav-item">
-                  <a class="nav-link nav-icon-hover" href="javascript:void(0)">
-                      <i class="ti ti-bell-ringing"></i>
-                      <div class="notification bg-primary rounded-circle"></div>
-                  </a>
-              </li>
           </ul>
           <div class="navbar-collapse justify-content-end px-0" id="navbarNav">
               <ul class="navbar-nav flex-row ms-auto align-items-center justify-content-end">
@@ -22,12 +16,14 @@
                       </a>
                       <div class="dropdown-menu dropdown-menu-end dropdown-menu-animate-up" aria-labelledby="drop2">
                           <div class="message-body">
-                              <a href="javascript:void(0)" class="d-flex align-items-center gap-2 dropdown-item">
-                                  <form action="{{route('logout')}}" method="post">
-                                      @csrf
-                                      <button type="submit" class="mb-0 fs-3 btn btn-link">Keluar</button>
-                                  </form>
+                              <a href="{{ route('logout') }}" onclick="event.preventDefault();
+                                document.getElementById('logout-form').submit();" class="d-flex align-items-center gap-2 dropdown-item">
+                                  <i class="ti ti-logout fs-6"></i>
+                                  <p class="mb-0 fs-3">Keluar</p>
                               </a>
+                              <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+                                  @csrf
+                              </form>
                           </div>
                       </div>
                   </li>

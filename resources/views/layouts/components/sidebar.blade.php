@@ -44,25 +44,15 @@
                  <span class="hide-menu">Fasilitas</span>
              </a>
          </li>
-         <li class="nav-small-cap">
-             <i class="ti ti-dots nav-small-cap-icon fs-4"></i>
-             <span class="hide-menu">AUTH</span>
-         </li>
          <li class="sidebar-item">
-             <a class="sidebar-link" href="{{ url('/login') }}" aria-expanded="false">
+             <a class="sidebar-link" href="{{ route('prestasi.index') }}" aria-expanded="false">
                  <span>
-                     <i class="ti ti-login"></i>
+                     <i class="ti ti-cards"></i>
                  </span>
-                 <span class="hide-menu">Masuk</span>
+                 <span class="hide-menu">Prestasi</span>
              </a>
          </li>
-         <li class="sidebar-item">
-             <a class="sidebar-link" href="{{ url('register') }}" aria-expanded="false">
-                 <span>
-                     <i class="ti ti-user-plus"></i>
-                 </span>
-                 <span class="hide-menu">Daftar</span>
-             </a>
-         </li>
+
+
      </ul>
  </nav>

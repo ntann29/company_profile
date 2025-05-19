@@ -36,7 +36,7 @@ class InformasiController extends Controller
     public function store(Request $request)
     {
         $validated = $request->validate([
-            'judul'     => 'required',
+            'judul'     => 'required|unique:informasis',
             'deskripsi' => 'required',
             'foto'      => 'required|mimes:jpg,png|max:1024',
         ]);
@@ -67,7 +67,7 @@ class InformasiController extends Controller
      */
     public function show($id)
     {
-        $informasi = informasi::findOrFail($id);
+        $informasi = Informasi::findOrFail($id);
         return view('informasi.show', compact('informasi'));
     }
 
