@@ -13,7 +13,7 @@ class PrestasiController extends Controller
      */
     public function index()
     {
-        $prestasi = Prestasi::all();
+        $prestasi = Prestasi::orderBy('created_at', 'desc')->get();
         return view('prestasi.index', compact('prestasi'));
     }
 

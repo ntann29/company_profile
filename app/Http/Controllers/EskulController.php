@@ -13,7 +13,7 @@ class EskulController extends Controller
      */
     public function index()
     {
-        $eskul = Eskul::all();
+        $eskul = Eskul::orderBy('created_at', 'desc')->get();
         return view('eskul.index', compact('eskul'));
     }
 
@@ -37,7 +37,7 @@ class EskulController extends Controller
     {
         $validated = $request->validate([
             'nama_eskul' => 'required',
-            'foto'       => 'required|mimes:jpg,png|max:1024',
+            'foto'       => 'required|mimes:jpg,png,webp|max:1024',
         ]);
 
         $eskul             = new Eskul;

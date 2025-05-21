@@ -8,7 +8,7 @@
         <!-- Section Title -->
         <div class="container section-title" data-aos="fade-up">
             <h2>Eskul</h2>
-            <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+            <p>Temukan kegiatan ekstrakurikuler yang sesuai dengan minat dan bakatmu di sekolah.</p>
         </div><!-- End Section Title -->
 
         <div class="container">
@@ -16,13 +16,13 @@
             <div class="row gy-4">
                 @foreach($eskul as $data)
                 <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
-                    <div class="service-item item-cyan position-relative">
+                    <div class=" card service-item item-cyan position-relative"><br>
                         <div>
-                            <img src="{{ asset('storage/eskul/' . $data->foto) }}" alt="" width="280">
+                            <img src="{{ asset('storage/eskul/' . $data->foto) }}" alt="" width="280" class="mx-auto d-block">
                         </div>
-                        <a href="#" class="stretched-link">
-                            <h3>{{ $data->nama_eskul }}</h3>
-                        </a>
+                        <p>
+                            <h3 class="text-center">{{ $data->nama_eskul }}</h3>
+                        </p>
                     </div>
                 </div><!-- End Service Item -->
                 @endforeach

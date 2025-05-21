@@ -13,7 +13,7 @@ class FasilitasController extends Controller
      */
     public function index()
     {
-        $fasilitas = Fasilitas::all();
+        $fasilitas = Fasilitas::orderBy('created_at', 'desc')->get();
         return view('fasilitas.index', compact('fasilitas'));
     }
 
@@ -37,7 +37,7 @@ class FasilitasController extends Controller
     {
         $validated = $request->validate([
             'nama_fasilitas' => 'required',
-            'foto'           => 'required|mimes:jpg,png|max:1024',
+            'foto'           => 'required|mimes:jpg,png,webp|max:1024',
         ]);
 
         $fasilitas                 = new Fasilitas;

@@ -23,7 +23,11 @@
                                 <select name="tugas" class="form-control" required>
                                     <option value="Memimpin seluruh kegiatan di sekolah" {{ $karyawan->tugas == 'Memimpin seluruh kegiatan di sekolah' ? 'selected' : '' }}>Memimpin seluruh kegiatan di sekolah</option>
                                     <option value="Mengatur tata tertib siswa" {{ $karyawan->tugas == 'Mengatur tata tertib siswa' ? 'selected' : '' }}>Mengatur tata tertib siswa</option>
-                                    <option value="Menilai dan mengevaluasi hasil belajar siswa" {{ $karyawan->tugas == 'Menilai dan mengevaluasi hasil belajar siswa' ? 'selected' : '' }}>Menilai dan mengevaluasi hasil belajar siswa</option>
+                                    <option value="Mapel MTK" {{ $karyawan->tugas == 'Mapel MTK' ? 'selected' : '' }}>Mapel MTK</option>
+                                    <option value="Mapel Inggris" {{ $karyawan->tugas == 'Mapel Inggris' ? 'selected' : '' }}>Mapel Inggris</option>
+                                    <option value="Mapel IPA" {{ $karyawan->tugas == 'Mapel IPA' ? 'selected' : '' }}>Mapel IPA</option>
+                                    <option value="Mapel Prakarya" {{ $karyawan->tugas == 'Mapel Prakarya' ? 'selected' : '' }}>Mapel Prakarya</option>
+                                    <option value="Mapel B.Indonesia" {{ $karyawan->tugas == 'Mapel B.Indonesia' ? 'selected' : '' }}>Mapel B.Indonesia</option>
                                     <option value="Memberikan layanan konseling kepada siswa" {{ $karyawan->tugas == 'Memberikan layanan konseling kepada siswa' ? 'selected' : '' }}>Memberikan layanan konseling kepada siswa</option>
                                     <option value="Mengatur dan mengawasi seluruh kegiatan administrasi sekolah" {{ $karyawan->tugas == 'Mengatur dan mengawasi seluruh kegiatan administrasi sekolah' ? 'selected' : '' }}>Mengatur dan mengawasi seluruh kegiatan administrasi sekolah</option>
                                     <option value="Menjaga keamanan dan ketertiban lingkungan sekolah" {{ $karyawan->tugas == 'Menjaga keamanan dan ketertiban lingkungan sekolah' ? 'selected' : '' }}>Menjaga keamanan dan ketertiban lingkungan sekolah</option>

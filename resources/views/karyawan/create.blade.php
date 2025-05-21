@@ -22,7 +22,11 @@
                                 <select name="tugas" class="form-control">
                                     <option value="Memimpin seluruh kegiatan di sekolah">Memimpin seluruh kegiatan di sekolah</option>
                                     <option value="Mengatur tata tertib siswa">Mengatur tata tertib siswa</option>
-                                    <option value="Menilai dan mengevaluasi hasil belajar siswa">Menilai dan mengevaluasi hasil belajar siswa</option>
+                                    <option value="Mapel MTK">Mapel MTK</option>
+                                    <option value="Mapel Inggris">Mapel Inggris</option>
+                                    <option value="Mapel IPA">Mapel IPA</option>
+                                    <option value="Mapel Prakarya">Mapel Prakarya</option>
+                                    <option value="Mapel B.Indonesia">Mapel B.Indonesia</option>
                                     <option value="Memberikan layanan konseling kepada siswa">Memberikan layanan konseling kepada siswa</option>
                                     <option value="Mengatur dan mengawasi seluruh kegiatan administrasi sekolah">Mengatur dan mengawasi seluruh kegiatan administrasi sekolah</option>
                                     <option value="Menjaga keamanan dan ketertiban lingkungan sekolah">Menjaga keamanan dan ketertiban lingkungan sekolah</option>
