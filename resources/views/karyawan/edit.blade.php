@@ -4,7 +4,7 @@
     <div class="container-fluid">
         <div class="card">
             <div class="card-body">
-                <h5 class="card-title fw-semibold mb-4">Edit Data Karyawan</h5>
+                <h5 class="card-title fw-semibold mb-4">Ubah Data Karyawan</h5>
                 <div class="card">
                     <div class="card-body">
                         <form action="{{ route('karyawan.update', $karyawan->id) }}" method="post" enctype="multipart/form-data">

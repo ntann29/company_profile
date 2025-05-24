@@ -10,7 +10,7 @@
                     <h2 style="color: white; text-shadow: 2px 2px 2px black">Selamat Datang</h2>
                     <p style="color: white; text-shadow: 2px 2px 2px black; ">Temukan informasi seputar kegiatan sekolah, prestasi siswa, program akademik dan non akademik.</p>
                     <a href="#tentang" class="btn-get-started">Tentang</a>
-                    <a href="#informasi" style="margin-left: 10px;" class="btn-get-started">Informasi</a>
+                    <a href="#informasi" class="btn-get-started">Informasi</a>
                 </div>
             </div>
         </div>

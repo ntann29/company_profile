@@ -10,11 +10,11 @@
 
         <nav id="navmenu" class="navmenu">
             <ul>
-                <li><a href="/" class="active">Beranda</a></li>
-                <li><a href="prestasi">Prestasi</a></li>
-                <li><a href="eskul">Eskul</a></li>
+                <li><a href="/">Beranda</a></li>
                 <li><a href="karyawan">Karyawan</a></li>
+                <li><a href="eskul">Eskul</a></li>
                 <li><a href="fasilitas">Fasilitas</a></li>
+                <li><a href="prestasi">Prestasi</a></li>
             </ul>
             <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
         </nav>

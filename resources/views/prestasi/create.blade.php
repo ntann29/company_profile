@@ -4,7 +4,7 @@
     <div class="container-fluid">
         <div class="card">
             <div class="card-body">
-                <h5 class="card-title fw-semibold mb-4">Data Prestasi</h5>
+                <h5 class="card-title fw-semibold mb-4">Tambah Data Prestasi</h5>
                 <div class="card">
                     <div class="card-body">
                         <form action="{{ route('prestasi.store') }}" method="post" enctype="multipart/form-data">

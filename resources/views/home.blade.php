@@ -9,7 +9,7 @@
                   Halo, Intan Anggraeni!
                   <br>
                   Selamat datang di sistem informasi sekolah. Di sini,
-                  Anda dapat dengan mudah mengakses data akademik, informasi 
+                  Anda dapat dengan mudah mengakses data akademik dan non akademik, informasi 
                   kegiatan sekolah, serta berbagai layanan digital lainnya.
                 </a>
                 <div class="table-responsive">
